@@ -1,0 +1,10 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t penguinairlines/learn-kubernetes-ci -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true penguinairlines/learn-kubernetes-ci npm run test
+language: generic

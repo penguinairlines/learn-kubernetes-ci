@@ -14,7 +14,7 @@ deploy:
   region: "us-east-1"
   app: "Environments"
   env: "LearnKubernetesCi-env"
-  bucket_name: "elasticbeanstalk-us-east-1-207336598549"
+  bucket: "elasticbeanstalk-us-east-1-207336598549"
   bucket_path: "Environments"
   on:
     branch: master
